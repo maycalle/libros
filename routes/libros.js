@@ -17,10 +17,11 @@ let upload = multer({storage: storage});
 
 // Listado general
 router.get('/', (req, res) => {
-    Libro.find().then(resultado => {
+    /*Libro.find().then(resultado => {
         res.render('libros_listado', { libros: resultado});
     }).catch (error => {
-    }); 
+    }); */
+    res.send("HOLA");
 });
 
 // Formulario de nuevo libro
