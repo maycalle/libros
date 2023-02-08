@@ -1,5 +1,5 @@
 # Imagen base
-FROM node
+FROM node:18
 
 RUN mkdir -p /usr/src/app
 
