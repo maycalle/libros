@@ -6,6 +6,9 @@ services:
          - "8080:8080"
       build: .
       restart: unless-stopped
+      command: /bin/bash
+      stdin_open: true
+      tty: true
       links:
          - mymongodb
       volumes:
