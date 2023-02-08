@@ -1,7 +1,6 @@
 # Imagen base
 FROM node:18
 
-# Crear directorio 
 RUN mkdir -p /usr/src/app
 
 # Establecimiento del directorio de trabajo
