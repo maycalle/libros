@@ -5,10 +5,7 @@ services:
       ports:
          - "8080:8080"
       build: .
-      restart: unless-stopped
-      command: /bin/bash
-      stdin_open: true
-      tty: true
+      restart: unless-stopped      
       links:
          - mymongodb
       volumes:
